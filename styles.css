@@ -46,6 +46,7 @@ body {
   height: 64px;
 }
 .brand { font-weight: 700; letter-spacing: 0.2px; }
+.brand .logo { margin-right: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
 .nav a { color: var(--text); text-decoration: none; margin-left: 20px; opacity: 0.9; }
 .nav a:hover { opacity: 1; }
 
@@ -129,6 +130,57 @@ body {
 .site-footer .container { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .site-footer a { color: var(--muted); text-decoration: none; }
 .site-footer a:hover { color: var(--text); }
+
+  /* Disclaimer */
+  .disclaimer .disclaimer-card {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+  }
+  .disclaimer .disc-icon {
+    width: 34px; height: 34px; display: grid; place-items: center;
+    border-radius: 999px;
+    color: #1bd4b6;
+    background: rgba(27, 212, 182, 0.08);
+    border: 1px solid rgba(27,212,182,0.25);
+    flex: 0 0 auto;
+  }
+  .disclaimer .disc-content h3 { margin: 0 0 6px; color: #1bd4b6; }
+  .disclaimer .disc-content p { margin: 0; color: var(--muted); }
+
+  /* Benefits */
+  .benefits .benefits-header { text-align: center; margin-bottom: 24px; }
+  .benefits .benefits-header h2 { font-size: 34px; margin: 0 0 8px; }
+  .benefits .benefits-header .highlight { color: #23d1b5; }
+  .benefits .benefits-header p { color: var(--muted); margin: 0; }
+  .benefits .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .benefit-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .benefit-icon {
+    width: 64px; height: 64px;
+    display: grid; place-items: center;
+    border-radius: 999px;
+    background: radial-gradient(closest-side, rgba(35,209,181,0.18), transparent), rgba(255,255,255,0.04);
+    border: 1px solid rgba(35,209,181,0.35);
+    color: #1bd4b6; font-size: 26px;
+  }
+  .benefit-content h3 { margin: 0 0 6px; font-size: 18px; }
+  .benefit-content p { margin: 0; color: var(--muted); }
 
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
