@@ -102,9 +102,17 @@ body {
   }
   .plan-header h3 { margin: 0; font-size: 20px; }
   .plan-header .subtitle { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
-  .plan-header .price { margin-top: 10px; font-size: 26px; font-weight: 700; letter-spacing: 0.2px; }
-  .plan-header .price .currency { opacity: 0.9; font-size: 18px; font-weight: 600; margin-right: 4px; }
-  .plan-header .price .per { color: var(--muted); font-size: 14px; font-weight: 500; margin-left: 6px; }
+  .plan-header .price { margin-top: 10px; }
+  .plan-header .price-original { margin-bottom: 8px; }
+  .plan-header .price-original .original-text { 
+    color: var(--muted); 
+    font-size: 14px; 
+    text-decoration: line-through; 
+    opacity: 0.7;
+  }
+  .plan-header .price-current { font-size: 26px; font-weight: 700; letter-spacing: 0.2px; }
+  .plan-header .price-current .currency { opacity: 0.9; font-size: 18px; font-weight: 600; margin-right: 4px; }
+  .plan-header .price-current .per { color: var(--muted); font-size: 14px; font-weight: 500; margin-left: 6px; }
   .plan-features { list-style: none; margin: 14px 0 18px; padding: 0; color: var(--text); }
   .plan-features li { position: relative; padding-left: 22px; margin: 10px 0; color: var(--muted); }
   .plan-features li::before { content: "✔"; position: absolute; left: 0; color: var(--accent); }
